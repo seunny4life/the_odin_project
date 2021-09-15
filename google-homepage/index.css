@@ -1,0 +1,136 @@
+html,
+body {
+  background-color: rgb(51, 47, 47);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header*/
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(51, 47, 47);
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*Moving some links to the right*/
+.right {
+  float: right;
+}
+
+/*Main*/
+#main {
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  clear: both;
+}
+
+#main div h1 {
+  font-size: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 25px;
+  overflow: hidden;
+}
+
+#search{
+  min-width: 60%;
+}
+#search input[type="search"] {
+  background-color: rgb(251, 251, 251);
+  font-size: 16px;
+  border-radius: 24px;
+  color: rgb(0, 0, 0);
+  background-image: url("https://www.w3schools.com/css/searchicon.png");
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 255, 255);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  min-width: 40%;
+}
+/**/
+#button {
+  min-width: 50%;
+}
+#button input[type="button"] {
+  background-color: rgb(44, 44, 44);
+
+  border: none;
+  color: white;
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/*Footer*/
+footer {
+  width: 100%;
+  bottom: 0;
+  margin-top: auto;
+  position: absolute;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(12, 12, 12);
+}
+
+footer ul li {
+  float: left;
+}
+
+footer ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/*Moving some links to the right*/
+.right {
+  float: right;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul li a:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+@media screen and (max-width: 600px) {
+  footer .right,
+  footer ul li {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #search {
+    width: 100%;
+  }
+}
